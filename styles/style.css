@@ -1,0 +1,31 @@
+.avatar {
+    border-radius: 50%;
+}
+
+button, body {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+  
+a {
+    padding: 6px;
+}
+
+.logo{
+    display: block;
+
+}
