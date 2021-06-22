@@ -1,31 +1,97 @@
-.avatar {
-    border-radius: 50%;
-}
-
-button, body {
-    font-size: 14px;
+/* general rules for elements in the body*/
+body {
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
+/*setting the display type for each separate div element*/
+div {
+    display: block;
+}
+
+/*fixing the navbar header's position and setting it to the top of the page*/
+nav{
+    position: fixed; /*fixes the position and removes it from the regular flow*/
+    width: 99%; /*makes the width 99% of the viewport*/
+    top: 10px; /*makes it 10px from the top of the viewport*/
+}
+
+/* moves elements to the right of the parent element */
+.right {
+    float: right;
+}
+
+/*makes the icon png circular*/
+.avatar {
+    border-radius: 50%; 
+}
+
+/*removing margins and padding as well as dot formatting from lists*/
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
+/* making the list elements float left and display on one line */
 li {
+    display: inline; /*Displays an element as an inline element. Any height and width properties will have no effect, for the list it makes it all display on one line*/
     float: left;
 }
-
-.float-right {
-    float: right;
-}
   
+/* adding padding to all the links */
 a {
     padding: 6px;
 }
 
+/* positioning the google logo to the center of the screen vertically */
 .logo{
-    display: block;
-
+    margin-top: 200px;
+    margin-bottom: 20px;
 }
+
+/*creating the search bar shape and size and formatting its content*/
+.search-bar {
+    display: flex; /*making it a flexbox so all the content inside the search bar is on the same line*/
+    justify-content: center; /*centers everything inside the box*/
+    margin: 0 auto; /*centers the box itself horizontally*/
+    width: 575px;
+    border-radius: 30px; /*rounding the edges*/
+    border: 1px solid #dadce0;
+}
+
+/*styling the input box for the search bar*/
+input{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    width: 87%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/*styling the search buttons*/
+button{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #f8f9fa;
+}
+
+/*stylign search buttons on hover*/
+button:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    border: 1px solid #dadce0;
+}
+
+
+/*styling the footer, preaty much the same as the headers*/
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 99%;
+}
+
+
