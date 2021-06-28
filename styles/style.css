@@ -48,6 +48,10 @@ a {
     text-decoration: none; /*removes the underline from the links*/
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 /*removing purple color when link is visited*/
 
 a:visited { 
@@ -70,6 +74,10 @@ a:visited {
     border: 1px solid #dadce0;
 }
 
+.search-bar:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+}
+
 /*styling the input box for the search bar*/
 input{
     border: none;
@@ -82,12 +90,17 @@ input{
     display: flex;
 }
 
+.search-buttons {
+    padding-top: 18px;
+}
+
 /*styling the search buttons*/
 button{
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
-    padding-top: 18px;
     border: 1px solid #f8f9fa;
+    padding: 0 16px;
+    height: 36px;
 }
 
 /*styling search buttons on hover*/
