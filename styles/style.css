@@ -1,6 +1,6 @@
 /* general rules for elements in the body*/
 body {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
@@ -15,6 +15,7 @@ nav{
     position: fixed; /*fixes the position and removes it from the regular flow*/
     width: 99%; /*makes the width 99% of the viewport*/
     top: 10px; /*makes it 10px from the top of the viewport*/
+    font-size: 13px;
 }
 
 /* moves elements to the right of the parent element */
@@ -43,11 +44,19 @@ li {
 /* adding padding to all the links */
 a {
     padding: 6px;
+    font-family: arial, sans-serif;
+    text-decoration: none; /*removes the underline from the links*/
 }
+
+/*removing purple color when link is visited*/
+
+a:visited { 
+    color: black; 
+   }
 
 /* positioning the google logo to the center of the screen vertically */
 .logo{
-    margin-top: 200px;
+    margin-top: 250px;
     margin-bottom: 20px;
 }
 
@@ -65,7 +74,7 @@ a {
 input{
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
     width: 87%;
     margin: 0;
@@ -75,23 +84,29 @@ input{
 
 /*styling the search buttons*/
 button{
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
+    padding-top: 18px;
     border: 1px solid #f8f9fa;
 }
 
-/*stylign search buttons on hover*/
+/*styling search buttons on hover*/
 button:hover {
     box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
     border: 1px solid #dadce0;
 }
 
 
-/*styling the footer, preaty much the same as the headers*/
+/*styling the footer, pretty much the same as the headers*/
 footer {
     position: fixed;
     bottom: 10px;
     width: 99%;
+    color: #70757a;
+}
+
+.footer-link:visited {
+    color: #70757a;
 }
 
 
